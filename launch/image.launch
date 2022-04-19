@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="raw2compressed" type="raw2compressed" name="raw2compressed" output="screen"/>
+</launch>
