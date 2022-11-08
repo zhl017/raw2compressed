@@ -1,3 +1,7 @@
 <launch>
+  <arg name="image_input" default="camera/image"/>
+  
   <node pkg="raw2compressed" type="raw2compressed" name="raw2compressed" output="screen"/>
+    <remap from="camera/image" to="$(arg image_input)"/>
+  
 </launch>
